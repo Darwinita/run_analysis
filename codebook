@@ -1,0 +1,133 @@
+
+---
+title       : run_analysis
+subtitle    : Getting and Cleaning data Course project
+author      : Lorenzo
+date        : 06/14/2014
+---
+
+
+The R script run_analysis has been used toto process the files containing data collected from the accelerometers into a tidy data table averaging each variable for each activity and each subject.
+
+
+Summary:
+*The training and the test sets have been merged to create one data set.
+*The measurements on the mean and standard deviation have been extracted and considered for further analysis.
+*The activity labels have been changed to actual descriptive activity names. 
+*Similarly, the measured variable names have been edited to remove unwanted characters and convert them into descriptive variable names. 
+*A final independent tidy data set with the average of each variable for each activity and each subject is then created and saved into a file tidy_data_out.csv.txt.
+
+The original file containing the data was downloaded and unzipped into the working directory. 
+The files used are the following:
+#Subject files. Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30. 
+"subject_test.txt"
+"subject_train.txt"
+#Files with actual data set of measurements
+"X_test.txt"
+"X_train.txt"
+#Files with data set of activity labels
+"y_test.txt"
+"y_train.txt"
+
+#file with the links of the labels with their activity name.
+"activity_labels.txt"
+#file Listing all features..
+"features.txt"
+
+The variable labels in the data set have been changed into descriptive variable names. Only  the measurements on the mean and standard deviation have been extracted and considered for further analysis. The resulting set of measured variable names are the following:
+1	tBodyAccmeanX                     
+2	tBodyAccmeanZ
+3	tBodyAccstdY
+4	tGravityAccmeanX
+5	tGravityAccmeanZ
+6	tGravityAccstdY
+7	tBodyAccJerkmeanX
+8	tBodyAccJerkmeanZ
+9	tBodyAccJerkstdY
+10	tBodyGyromeanX
+11	tBodyGyromeanZ
+12	tBodyGyrostdY
+13	tBodyGyroJerkmeanX
+14	tBodyGyroJerkmeanZ
+15	tBodyGyroJerkstdY
+16	tBodyAccMagmean
+17	tGravityAccMagmean
+18	tBodyAccJerkMagmean
+19	tBodyGyroMagmean
+20	tBodyGyroJerkMagmean
+21	fBodyAccmeanX
+22	fBodyAccmeanZ
+23	fBodyAccstdY
+24	fBodyAccmeanFreqX
+25	fBodyAccmeanFreqZ
+26	fBodyAccJerkmeanY
+27	fBodyAccJerkstdX
+28	fBodyAccJerkstdZ
+29	fBodyAccJerkmeanFreqY
+30	fBodyGyromeanX
+31	fBodyGyromeanZ
+32	fBodyGyrostdY
+33	fBodyGyromeanFreqX
+34	fBodyGyromeanFreqZ
+35	fBodyAccMagstd
+36	fBodyBodyAccJerkMagmean
+37	fBodyBodyAccJerkMagmeanFreq
+38	fBodyBodyGyroMagstd
+39	fBodyBodyGyroJerkMagmean
+40	fBodyBodyGyroJerkMagmeanFreq
+41	angletBodyAccJerkMeangravityMean
+42	angletBodyGyroJerkMeangravityMean
+43	angleYgravityMean
+44	tBodyAccmeanY
+45	tBodyAccstdX
+46	tBodyAccstdZ
+47	tGravityAccmeanY
+48	tGravityAccstdX
+49	tGravityAccstdZ
+50	tBodyAccJerkmeanY
+51	tBodyAccJerkstdX
+52	tBodyAccJerkstdZ
+53	tBodyGyromeanY
+54	tBodyGyrostdX
+55	tBodyGyrostdZ
+56	tBodyGyroJerkmeanY
+57	tBodyGyroJerkstdX
+58	tBodyGyroJerkstdZ
+59	tBodyAccMagstd
+60	tGravityAccMagstd
+61	tBodyAccJerkMagstd
+62	tBodyGyroMagstd
+63	tBodyGyroJerkMagstd
+64	fBodyAccmeanY
+65	fBodyAccstdX
+66	fBodyAccstdZ
+67	fBodyAccmeanFreqY
+68	fBodyAccJerkmeanX
+69	fBodyAccJerkmeanZ
+70	fBodyAccJerkstdY
+71	fBodyAccJerkmeanFreqX
+72	fBodyAccJerkmeanFreqZ
+73	fBodyGyromeanY
+74	fBodyGyrostdX
+75	fBodyGyrostdZ
+76	fBodyGyromeanFreqY
+77	fBodyAccMagmean
+78	fBodyAccMagmeanFreq
+79	fBodyBodyAccJerkMagstd
+80	fBodyBodyGyroMagmean
+81	fBodyBodyGyroMagmeanFreq
+82	fBodyBodyGyroJerkMagstd
+83	angletBodyAccMeangravity
+84	angletBodyGyroMeangravityMean
+85	angleXgravityMean
+86	angleZgravityMean
+
+#the label activities in the data set have been changed into descriptive activity names:
+1 WALKING
+2 WALKING_UPSTAIRS
+3 WALKING_DOWNSTAIRS
+4 SITTING
+5 STANDING
+6 LAYING
+
+The training and the test sets have been merged to create one data set. A second, independent tidy data set containing the average of each variable for each activity and each subject has been created and saved into a file ""tidy_data_out.csv.txt" in csv format. The resulting output table has 180 rows (6 activities x 30 subjects) and 88 columns. Two containing the Id variables subject and activity, and 86 containing the actual measured ids.
