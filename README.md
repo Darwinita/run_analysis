@@ -25,4 +25,4 @@ Please, read the comments contained in the script to see the actual steps of the
 
 The data were download here: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 You can find a description of the data here: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
-
+ 
