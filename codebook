@@ -15,7 +15,7 @@ Summary:
 *The measurements on the mean and standard deviation have been extracted and considered for further analysis.
 *The activity labels have been changed to actual descriptive activity names. 
 *Similarly, the measured variable names have been edited to remove unwanted characters and convert them into descriptive variable names. 
-*A final independent tidy data set with the average of each variable for each activity and each subject is then created and saved into a file tidy_data_out.csv.txt.
+*A final independent tidy data set, with the average of each variable for each activity and each subject, is then created and saved into a file tidy_data_out.csv.txt.
 
 The original file containing the data was downloaded and unzipped into the working directory. 
 The files used are the following:
@@ -34,7 +34,10 @@ The files used are the following:
 #file Listing all features..
 "features.txt"
 
-The variable labels in the data set have been changed into descriptive variable names. Only  the measurements on the mean and standard deviation have been extracted and considered for further analysis. The resulting set of measured variable names are the following:
+The variable labels in the data set have been changed into descriptive variable names. 
+Only  the measurements on the mean and standard deviation have been extracted and considered for further analysis. 
+The resulting set of measured variable names are the following:
+
 1	tBodyAccmeanX                     
 2	tBodyAccmeanZ
 3	tBodyAccstdY
@@ -130,4 +133,8 @@ The variable labels in the data set have been changed into descriptive variable 
 5 STANDING
 6 LAYING
 
-The training and the test sets have been merged to create one data set. A second, independent tidy data set containing the average of each variable for each activity and each subject has been created and saved into a file ""tidy_data_out.csv.txt" in csv format. The resulting output table has 180 rows (6 activities x 30 subjects) and 88 columns. Two containing the Id variables subject and activity, and 86 containing the actual measured ids.
+The training and the test sets have been merged to create one data set. 
+A second, independent tidy data set containing the average of each variable for each activity and each subject 
+has been created and saved into a file ""tidy_data_out.csv.txt" in csv format. The resulting output table 
+has 180 rows (6 activities x 30 subjects) and 88 columns. Two contain the Id for the variables subject and activity, 
+and 86 containing the averages of the actual measured variables.
